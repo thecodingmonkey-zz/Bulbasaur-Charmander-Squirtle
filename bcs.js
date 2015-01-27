@@ -1,27 +1,47 @@
+var previousPlayerPick;
+var previousComputerPick;
+
+//http://gizmodo.com/science-has-finally-figured-out-how-to-win-rock-paper-s-1571019588
 function computerChoice() {
   var choice = ["Bulbasaur", "Charmander", "Squirtle"];
   var randoChoice = Math.floor(Math.random()*choice.length);
-  return choice[randoChoice];
+  if (winnerPic=== undefined || result === "Tie") {
+    return choice[randoChoice];
+  }else if (result === "Player Wins"){
+    if (previousPlayerPick==="Bulbasaur"){
+      return "Charmander";
+    }
+    if (previousPlayerPick==="Squirtle"){
+      return "Bulbasaur";
+    }
+    if (previousPlayerPick==="Charmander"){
+      return "Squirtle";
+    }
+  }else if (result === "Computer Wins"){
+    if (previousComputerPick==="Bulbasaur"){
+      return "Squirtle";
+    }
+    if (previousComputerPick==="Charmander"){
+      return "Bulbasaur";
+    }
+    if (previousComputerPick==="Squirtle"){
+      return "Charmander";
+    }
+  }
 }
 
 var playerPick;
 var computerPick;
 var winnerPic;
+var result;
 
-var playerScore = window.name.playerScore;
-var computerScore = window.name.computerScore;
-
-if (playerScore === undefined) {
-  playerScore = 0;
-}
-if (computerScore === undefined) {
-  computerScore = 0;
-}
-
-
+var playerScore = 0;
+var computerScore = 0;
 function matchResults(playerPick){
   var computerPick = computerChoice();
-  var result;
+  previousPlayerPick=playerPick;
+  previousComputerPick=computerPick;
+console.log(playerPick, computerPick);
   if (playerPick === "Bulbasaur" && computerPick === "Bulbasaur") {
     result = "Tie";
     winnerPic = "img/tie.gif";
@@ -93,10 +113,3 @@ function newGame(){
 // console.log(playerPick); 
 // console.log(computerPick);
 // console.log(result);
-
-
-
-
-//https://answers.yahoo.com/question/index?qid=20101208112148AAvahPD
-
-
