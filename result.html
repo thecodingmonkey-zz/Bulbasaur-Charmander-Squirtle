@@ -9,23 +9,42 @@
 <script type ="text/javascript" src="bcs.js">
 
 </script>
-  <div id= "player">
-    Player:
+
+  <div id= "player1">
+    Player 1: <span id="playerScore"/>
   </div>
 
   <div id= "computer">
-    Computer:
+    Computer: <span id="computerScore"/>
   </div>
+
+
+
+
+
+<div id="match">
+  <img id="playerPokemon" src="img/static-bulbasaur.png"/>
+  <img src="img/versus.png"/>
+  <img id="computerPokemon" src="img/static-charmander.png"/>
+</div>
 
  <div id= "results">
   <p>Player Chose: <span id="Player_choice"/></p>
   <p>Computer Chose: <span id="Computer_choice"/></p>
-
+  <img id="winningPokemon" src="img/bulbasaur.gif"/>
   <p><span id="BCS_result">RESULT </span></p>
 
   <span id="play_again" onclick="document.location='game.html'">
   Play Again? 
   </span>
+
+  <div id="directions">Pick Your Pokemon!</div>
+    <ul>
+      <li><div id="Bulbasaur" onclick="choose('Bulbasaur');">Bulbasaur</div></li>
+      <li><div id="Charmander" onclick="choose('Charmander')";>Charmander</div></li>
+      <li><div id="Squirtle" onclick="choose('Squirtle')";>Squirtle</div></li>
+    </ul>
+    
   </div>
   
 </body>
