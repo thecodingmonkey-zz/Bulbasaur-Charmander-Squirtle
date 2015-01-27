@@ -10,17 +10,22 @@
 
 </script>
   <div id= "player1">
-    Player 1:
+    Player 1: <span id="playerScore"/>
   </div>
 
-  <div id= "player2">
-    Player 2:
+  <div id= "computer">
+    Computer: <span id="computerScore"/>
   </div>
+<div id="match">
+  <img id="playerPokemon" src="img/static-bulbasaur.png"/>
+  <img src="img/versus.png"/>
+  <img id="computerPokemon" src="img/static-charmander.png"/>
+</div>
 
  <div id= "results">
   <p>Player Chose: <span id="Player_choice"/></p>
   <p>Computer Chose: <span id="Computer_choice"/></p>
-
+  <img id="winningPokemon" src="img/bulbasaur.gif"/>
   <p><span id="BCS_result">RESULT </span></p>
 
   <span id="play_again" onclick="document.location='game.html'">

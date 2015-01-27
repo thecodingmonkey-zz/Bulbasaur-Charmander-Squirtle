@@ -3,11 +3,15 @@
   float: left;
 }
 
-#player2 {
+#computer {
   float: right;
 }
 
 #results {
+  text-align:center;
+}
+
+#match {
   text-align:center;
 }
 
