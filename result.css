@@ -1,17 +1,38 @@
 
 #player1 { 
+  display: block;
   float: left;
+  font-size: 20pt;
 }
 
-#player2 {
+#computer {
+  display: block;
   float: right;
+  font-size: 20pt;
 }
 
 #results {
   text-align:center;
 }
 
+#match {
+  text-align:center;
+}
+
 #play_again {
   border: 1px solid #000;
   padding: 5px;
+}
+
+#choices {
+  text-align:center;
+}
+
+#directions {
+  text-align:center;
+  font-size: 30pt;
+}
+
+#winningPokemon {
+  text-align:center;
 }

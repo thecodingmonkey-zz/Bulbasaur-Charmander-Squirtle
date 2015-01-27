@@ -9,24 +9,49 @@
 <script type ="text/javascript" src="bcs.js">
 
 </script>
+
+<div>
   <div id= "player1">
-    Player 1:
+    Player 1: <span id="playerScore"/>
   </div>
 
-  <div id= "player2">
-    Player 2:
+  <div id= "computer">
+    Computer: <span id="computerScore"/>
   </div>
+</div>
 
- <div id= "results">
+<div id="match" style="display: none">
+  <img id="playerPokemon" src="img/static-bulbasaur.png"/>
+  <img src="img/versus.png"/>
+  <img id="computerPokemon" src="img/static-charmander.png"/>
+</div>
+
+ <div id= "results" style="display: none">
   <p>Player Chose: <span id="Player_choice"/></p>
   <p>Computer Chose: <span id="Computer_choice"/></p>
-
+  <img id="winningPokemon" src="img/bulbasaur.gif" height="300" width="400"/>
   <p><span id="BCS_result">RESULT </span></p>
 
-  <span id="play_again" onclick="document.location='game.html'">
+  <span id="play_again" onclick="newGame()">
   Play Again? 
   </span>
+ </div>
+
+  <div id="directions">Pick Your Pokemon!</div>
+
+  <div id="choices">
+    <span id="Bulbasaur" onclick="matchResults('Bulbasaur');">
+      <img src="img/static-bulbasaur.png" height="200" width="200"/>
+    </span>
+    <span id="Charmander" onclick="matchResults('Charmander')";>
+      <img src="img/static-charmander.png" height="200" width="200"/>
+    </span>
+    <span id="Squirtle" onclick="matchResults('Squirtle')";>
+      <img src="img/static-squirtle.png" height="200" width="200"/>
+    </span>
   </div>
+    
+ 
   
 </body>
 </html>
