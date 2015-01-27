@@ -2,34 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="result.css" rel="stylesheet" media="screen"/>
+  <link href="index.css" rel="stylesheet" media="screen"/>
   <title>Bulbasaur-Charmander-Squirtle</title>
 </head>
 <body>
-<script type ="text/javascript" src="bcs.js">
+<script type="text/javascript" src="bcs.js">
 
 </script>
 
 <div>
-  <div id= "player1">
+  <div id="player1">
     Player 1: <span id="playerScore"/>
   </div>
 
-  <div id= "computer">
+  <div id="computer">
     Computer: <span id="computerScore"/>
   </div>
 </div>
 
 <div id="match" style="display: none">
-  <img id="playerPokemon" src="img/static-bulbasaur.png"/>
+  <img id="playerPokemon"/>
   <img src="img/versus.png"/>
-  <img id="computerPokemon" src="img/static-charmander.png"/>
+  <img id="computerPokemon"/>
 </div>
 
- <div id= "results" style="display: none">
+ <div id="results" style="display: none">
   <p>Player Chose: <span id="Player_choice"/></p>
+
   <p>Computer Chose: <span id="Computer_choice"/></p>
-  <img id="winningPokemon" src="img/bulbasaur.gif" height="300" width="400"/>
+  <img id="winningPokemon" height="300" width="400"/>
   <p><span id="BCS_result">RESULT </span></p>
 
   <span id="play_again" onclick="newGame()">
@@ -51,7 +52,5 @@
     </span>
   </div>
     
- 
-  
 </body>
 </html>
