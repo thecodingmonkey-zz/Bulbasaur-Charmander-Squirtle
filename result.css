@@ -1,9 +1,9 @@
 
-#player1 { 
+#player { 
   float: left;
 }
 
-#player2 {
+#computer {
   float: right;
 }
 
