@@ -24,7 +24,7 @@ function matchResults(playerPick){
   var result;
   if (playerPick === "Bulbasaur" && computerPick === "Bulbasaur") {
     result = "Tie";
-    winnerPic = "img/static-"+computerPick+".png";
+    winnerPic = "img/tie.gif";
 
   }
   if (playerPick === "Bulbasaur" && computerPick === "Charmander") {
@@ -45,6 +45,7 @@ function matchResults(playerPick){
   }
   if (playerPick === "Charmander" && computerPick === "Charmander") {
     result = "Tie";
+    winnerPic = "img/tie.gif";
   }
   if (playerPick === "Charmander" && computerPick === "Squirtle") {
     result = "Computer Wins";
@@ -64,6 +65,7 @@ function matchResults(playerPick){
   }
   if (playerPick === "Squirtle" && computerPick === "Squirtle") {
     result = "Tie";
+    winnerPic = "img/tie.gif";
   }
   document.getElementById("Player_choice").innerHTML = playerPick;
   document.getElementById("Computer_choice").innerHTML = computerPick; 
@@ -88,8 +90,8 @@ function newGame(){
   // document.getElementById("choices").style.display="inline"; 
 }
 
-console.log(playerPick); 
-console.log(computerPick);
+// console.log(playerPick); 
+// console.log(computerPick);
 // console.log(result);
 
 
