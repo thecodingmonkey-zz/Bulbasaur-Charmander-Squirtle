@@ -45,8 +45,11 @@ console.log(playerPick);
 console.log(computerPick);
 console. log(result);
 
-
-
+window.onload = function(){
+  document.getElementById("Player_choice").innerHTML = playerPick;
+  document.getElementById("Computer_choice").innerHTML = computerPick; 
+  document.getElementById("BCS_result").innerHTML = result;
+};
 
 
 
